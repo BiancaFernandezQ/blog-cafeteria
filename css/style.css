@@ -289,12 +289,12 @@ img {
 .campo{
     display: flex;
     margin-bottom: 2rem;
-    gap: 2rem;
 }
 .campo__label{
     /*propiedades en los hijos de flexbox*/
     flex: 0 0 9rem; /*no crecer, no reducir, width fijo 9rem*/
     text-align: right;
+    padding-right: 2rem;
 }
 
 .campo__field{
@@ -305,4 +305,11 @@ img {
 
 .campo__field--textarea{
     height: 20rem;
+}
+
+/*menor o igual a 768ox*/
+@media (max-width: 768px) {
+    .campo__field{
+        width: 100%;
+    }
 }
